@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+times=times+1;
+  res.send('users accesses are:'+times);
+  var times=times+1;
 });
 
 module.exports = router;
